@@ -209,12 +209,12 @@ unless options[:removeOk] then
 
   case removeOk
   when "y", "Y"
-    rmRepos(repoarray, generation, removeDirs)
+    rmRepos(repoarray, generation)
   when "n", "N"
     puts "Exit program"
   end
 else
-  rmRepos(repoarray, generation, removeDirs)
+  rmRepos(repoarray, generation)
 end
 
 delLockFile(lockfile)
