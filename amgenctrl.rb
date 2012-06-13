@@ -18,7 +18,6 @@
 #
 require 'optparse'
 require 'fileutils'
-require 'logger'
 
 #################
 #
@@ -109,19 +108,6 @@ def rmRepos(repos, gen)
   puts "Done."
 
 end
-
-#################
-#
-# setup Logger
-#
-log       = Logger.new(STDOUT)
-log.level = Logger::WARN
-
-log.debug("Created Logger")
-log.info("Program Started")
-log.warn("Nothing to do !")
-log.error("Nothing to do !")
-log.fatal("Nothing to do !")
 
 ################################################################################
 #
